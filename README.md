@@ -1,8 +1,18 @@
 # DeepBridge Synthetic
 
+[![Tests](https://github.com/DeepBridge-Validation/deepbridge-synthetic/actions/workflows/tests.yml/badge.svg)](https://github.com/DeepBridge-Validation/deepbridge-synthetic/actions)
+[![codecov](https://codecov.io/gh/DeepBridge-Validation/deepbridge-synthetic/branch/main/graph/badge.svg)](https://codecov.io/gh/DeepBridge-Validation/deepbridge-synthetic)
+[![PyPI version](https://badge.fury.io/py/deepbridge-synthetic.svg)](https://badge.fury.io/py/deepbridge-synthetic)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Privacy-Preserving Synthetic Data Generation
 
-**Note:** This is a standalone library and can be used without installing DeepBridge.
+> **Standalone Package - No Dependencies on DeepBridge!**
+>
+> This package can be used independently for synthetic data generation.
+> It was extracted from DeepBridge v1.x to provide a focused, standalone solution.
+> See [Migration Guide](https://github.com/DeepBridge-Validation/DeepBridge/blob/feat/split-repos-v2/desenvolvimento/refatoracao/GUIA_RAPIDO_MIGRACAO.md) if migrating from v1.x.
 
 ## Installation
 
