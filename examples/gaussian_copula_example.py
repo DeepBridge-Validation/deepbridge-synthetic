@@ -27,11 +27,14 @@ print(f"\nOriginal statistics:\n{original_df.describe()}")
 # Generate synthetic data
 print("\nGenerating synthetic data...")
 synthesizer = Synthesize(
-    data=original_df,
-    method='gaussian_copula'
+    dataset=original_df,
+    method='gaussian',
+    num_samples=2000,
+    print_metrics=True
 )
 
-synthetic_df = synthesizer.generate(n_samples=2000)
+# Synthetic data is already generated and available in synthesizer.data
+synthetic_df = synthesizer.data
 
 print(f"\n✅ Synthetic data generated!")
 print(f"Synthetic data shape: {synthetic_df.shape}")
