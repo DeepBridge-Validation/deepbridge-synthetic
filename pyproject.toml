@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "deepbridge-synthetic"
+version = "2.0.0-alpha.1"
+description = "Privacy-Preserving Synthetic Data Generation - Standalone library"
+authors = ["Team DeepBridge <gustavo.haase@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/DeepBridge-Validation/deepbridge-synthetic"
+repository = "https://github.com/DeepBridge-Validation/deepbridge-synthetic"
+keywords = ["synthetic-data", "privacy", "data-generation", "gaussian-copula"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+packages = [{include = "deepbridge_synthetic"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+# NOTA: NÃO depende de deepbridge!
+numpy = ">=1.24.0"
+pandas = ">=2.0.0"
+scipy = ">=1.11.0"
+dask = {extras = ["distributed"], version = ">=2023.5.0"}
+statsmodels = ">=0.14.0"
+matplotlib = ">=3.7.0"
+seaborn = ">=0.12.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+mypy = "^1.19.1"
+ruff = "^0.15.0"
+black = "^24.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 79
+target-version = "py310"
