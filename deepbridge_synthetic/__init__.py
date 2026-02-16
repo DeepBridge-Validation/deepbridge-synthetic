@@ -7,7 +7,7 @@ while preserving statistical properties and privacy.
 Note: This is a standalone library and does NOT require deepbridge core.
 """
 
-__version__ = '2.0.0-alpha.1'
+__version__ = '2.0.0-rc.1'
 __author__ = 'Team DeepBridge'
 
 from deepbridge_synthetic.synthesizer import Synthesize

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "deepbridge-synthetic"
-version = "2.0.0-alpha.1"
+version = "2.0.0-rc.1"
 description = "Privacy-Preserving Synthetic Data Generation - Standalone library"
 authors = ["Team DeepBridge <gustavo.haase@gmail.com>"]
 readme = "README.md"
