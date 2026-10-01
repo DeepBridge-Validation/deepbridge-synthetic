@@ -46,6 +46,35 @@ synthetic_df = synthesizer.generate(n_samples=10000)
 
 Full documentation: https://deepbridge.readthedocs.io/en/latest/synthetic/
 
+## Development
+
+Este pacote e standalone: NAO depende do core `deepbridge`, portanto nao ha
+nada para instalar em modo editavel ao lado dele.
+
+Com Poetry (o `dev` aqui e um *group*, nao um extra, por isso entra junto):
+
+```bash
+# a partir da raiz de deepbridge-synthetic
+poetry install
+```
+
+Com venv + pip:
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -e .
+pip install pytest pytest-cov  # grupo dev do pyproject
+```
+
+### Running the tests
+
+```bash
+pytest tests -q
+```
+
+Nao e preciso `PYTHONPATH` nem instalar o core. Se algum teste daqui passar a
+exigir `deepbridge`, isso e um bug de acoplamento, nao um problema de setup.
+
 ## Related Projects
 
 - [deepbridge](https://github.com/DeepBridge-Validation/deepbridge) - Model Validation Toolkit
